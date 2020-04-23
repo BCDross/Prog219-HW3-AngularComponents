@@ -1,0 +1,9 @@
+<app-header></app-header>
+<div class="boxed">
+  <h3>My To Do Items</h3>
+  <ul class="todoitems">
+      <li *ngFor="let ToDoPlaceholder of TheToDos">
+      <span class="badge">{{ToDoPlaceholder.title}}</span> {{ToDoPlaceholder.priority}}, {{ToDoPlaceholder.detail}}, {{ToDoPlaceholder.completed}}
+      </li>
+  </ul>
+</div>
